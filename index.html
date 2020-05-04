@@ -42,7 +42,7 @@
     var $table = $('#table');
 
     $(function () {
-        $.get("/proxy.list", function(result) {
+        $.get("https://github.com/fate0/proxylist/blob/master/proxy.list", function(result) {
             var proxylist_tmp = result.split('\n');
             var proxylist = [];
             $.each(proxylist_tmp, function(n, value) {
